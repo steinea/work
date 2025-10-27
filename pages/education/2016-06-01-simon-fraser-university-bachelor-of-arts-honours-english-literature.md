@@ -3,8 +3,8 @@ layout: default
 category: education
 subcategory:
 tags:
-title: English
-type: B.A., Honours with Distinction
+title: English, Distinction
+type: BA Honours
 organization: SFU
 started: 2010-09-01
 ended: 2016-06-01    

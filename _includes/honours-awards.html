@@ -1,8 +1,13 @@
 <ul>
-  {% assign sorted = site.pages | sort: "ended" | reverse %}
+  {% assign sorted = site.pages | sort: "started" | reverse %}
   {% for item in sorted %}
     {% if item.category contains "honours-awards" %}
-      <li>{{ item.started | date: '%Y' }} / {{ item.ended | date: '%Y' }} {{ item.title }}</li>
+      <li>{{ item.started | date: '%Y' }}
+          {% if item.ended %}/ {{ item.ended | date: '%y' }}
+          {% else %}
+          <!-- 3 en spaces, 2 thin spaces -->     
+          {% endif %} 
+          {% if item.link %}<a href="{{ item.link }}">{% endif %}{{ item.title }}{% if item.link %}</a>{% endif %}</li>
     {% endif %}
   {% endfor %}
 </ul>

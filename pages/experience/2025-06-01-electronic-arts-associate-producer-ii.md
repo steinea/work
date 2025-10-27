@@ -6,7 +6,5 @@ tags:
 title: Associate Producer II
 organization: EA
 started: 2025-06-01
-ended: Present
+ended:   
 ---
-
-<!-- Present works with one regular space followed by three en spaces -->

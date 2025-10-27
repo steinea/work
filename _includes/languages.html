@@ -1,5 +1,5 @@
 <ul>
-  {% assign sorted = site.pages | sort: "started" | reverse %}
+  {% assign sorted = site.pages | sort: "started" %}
   {% for item in sorted %}
     {% if item.category contains "language" %}
       <li>{{ item.title }}, {{ item.fluency }}</li>

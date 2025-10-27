@@ -3,7 +3,7 @@ layout: default
 category: education
 subcategory:
 tags:
-title: CEFR B1
+title: French B1
 type: Certificate
 organization: Tours
 started: 2015-05-25

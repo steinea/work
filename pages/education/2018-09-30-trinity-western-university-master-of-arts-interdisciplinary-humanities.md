@@ -4,7 +4,7 @@ category: education
 subcategory:
 tags:
 title: Interdisciplinary Humanities
-type: M.A.
+type: MA
 organization: TWU
 started: 2016-09-01
 ended: 2018-09-30
