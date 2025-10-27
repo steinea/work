@@ -4,7 +4,7 @@ category: scholarship
 subcategory: course-taught
 tags:
 title: GAME 380
-subtitle: Field Placement
+subtitle: Industry Field Placement
 semester: SU
 date: 2022-05-01
 link: https://www.twu.ca/course/game-380-game-development-field-placement-2021-2022
