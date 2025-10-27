@@ -6,21 +6,21 @@ permalink: /
 
 <br>
 
-<h4>Experience</h4>
+#### Experience
 
 {% include experience.html %}
 
 <br>
 
 
-<h4>Education</h4>
+#### Education
 
 {% include education.html %}
 
 <br>
 
 
-<h4>Licenses & Certifications</h4>
+#### Licenses & Certifications
 
 {% include licenses-certifications.html %}
 
@@ -28,56 +28,54 @@ permalink: /
 
 
 
-<h4>Honours & Awards</h4>
+#### Honours & Awards
 
 {% include honours-awards.html %}
 
 <br>
 
 
-<h4>Affiliations</h4>
+#### Affiliations
 
 {% include affiliations.html %}
 
 <br>
 
 
-<h4>Languages</h4>
+#### Languages
 
 {% include languages.html %}
 
 <br>
 
 
-<h4>Skills</h4>
-
-{% include skills.html %}
+#### Skills
 
 <br>
 
 
-<h4>Industry</h4>
+#### Industry
 
 {% include industry.html %}
 
 <br>
 
 
-<h4>Scholarship</h4>
+#### Scholarship
 
 {% include scholarship.html %}
 
 <br>
 
 
-<h4>Design</h4>
+#### Design
 
 {% include design.html %}
 
 <br>
 
 
-<h4>Poetry</h4>
+#### Poetry
 
 {% include poetry.html %}
 
@@ -86,6 +84,6 @@ permalink: /
 <hr>
 
 
-<h4>Colophon</h4>
+#### Colophon
 
 {% include colophon.md %}
