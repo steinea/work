@@ -82,3 +82,10 @@ permalink: /
 {% include poetry.html %}
 
 <br>
+
+<hr>
+
+
+<h4>Colophon</h4>
+
+{% include colophon.md %}
