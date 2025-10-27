@@ -4,7 +4,7 @@
     {% assign sorted = site.pages | sort: "date" | reverse %}
     {% for item in sorted %}
       {% if item.category contains "design" and item.subcategory contains "tabletop-game" %}
-        <li>{{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+        <li>{{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

@@ -2,7 +2,7 @@
   {% assign sorted = site.pages | sort: "ended" | reverse %}
   {% for item in sorted %}
     {% if item.category contains "education" %}
-      <li>{{ item.ended | date: '%Y' }} {{ item.organization }}, {% if item.link %}<a href="{{ item.link }}">{% endif %}{{ item.type }}{% if item.link %}</a>{% endif %}, {{ item.title }}</li>
+      <li>{{ item.ended | date: '%Y' }} {% if item.link %}<a href="{{ item.link }}">{% endif %}{{ item.type }}{% if item.link %}</a>{% endif %}, {{ item.title }}</li>
     {% endif %}
   {% endfor %}
 </ul>
