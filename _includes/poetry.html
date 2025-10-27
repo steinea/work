@@ -22,3 +22,15 @@
     {% endfor %}
   </ul>
   <br>
+
+<h5>Poems</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "date" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "poetry" and item.subcategory contains "poem" %}
+        <li>{{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <br>
