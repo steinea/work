@@ -1,0 +1,10 @@
+<ul>
+  {% assign sorted = site.pages | sort: "ended" | reverse %}
+  {% for item in sorted %}
+    {% if item.category contains "experience" and item.ended != "Present" %}
+      <li>{{ item.started | date: '%Y' }} / {{ item.ended | date: '%Y' }} {{ item.organization }}, {{ item.title }}</li>
+    {% elsif item.category contains "experience" and item.ended contains "Present" %}
+      <li>{{ item.started | date: '%Y' }} /      {{ item.organization }}, {{ item.title }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

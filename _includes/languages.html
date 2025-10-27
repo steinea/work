@@ -1,0 +1,8 @@
+<ul>
+  {% assign sorted = site.pages | sort: "started" | reverse %}
+  {% for item in sorted %}
+    {% if item.category contains "language" %}
+      <li>{{ item.title }}, {{ item.fluency }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

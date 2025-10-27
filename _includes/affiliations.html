@@ -1,0 +1,8 @@
+<ul>
+  {% assign sorted = site.pages | sort: "started" | reverse %}
+  {% for item in sorted %}
+    {% if item.category contains "affiliation" %}
+      <li>Since {{ item.started | date: '%Y' }} <a href="{{ item.link }}">{{ item.organization }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>

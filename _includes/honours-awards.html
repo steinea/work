@@ -1,0 +1,8 @@
+<ul>
+  {% assign sorted = site.pages | sort: "ended" | reverse %}
+  {% for item in sorted %}
+    {% if item.category contains "honours-awards" %}
+      <li>{{ item.started | date: '%Y' }} / {{ item.ended | date: '%Y' }} {{ item.organization }}, {{ item.title }}{% if item.amount %}, ${{ item.amount }}{% endif %}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

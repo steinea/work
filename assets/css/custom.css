@@ -34,6 +34,10 @@ a[href*='//steinea'] {
   text-decoration-style: wavy;
 }
 
+a[href*='//steinea.itch'] {
+  text-decoration-style: solid;
+}
+
 /* After styling for external links, currently just using text decoration
 a[href*='//']:after {
   position: relative;

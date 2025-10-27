@@ -1,0 +1,49 @@
+<h5>Book Chapters</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "date" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "scholarship" and item.subcategory contains "book-chapter" %}
+        <li>{{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <br>
+
+
+<h5>Book Reviews</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "date" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "scholarship" and item.subcategory contains "book-review" %}
+        <li>{{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <br>
+
+
+<h5>Conference Papers</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "date" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "scholarship" and item.subcategory contains "conference-paper" %}
+        <li>{{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.pdf }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <br>
+
+
+<h5>Courses Taught</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "date" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "scholarship" and item.subcategory contains "course-taught" %}
+        <li>{{ item.semester }} {{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}: {{ item.subtitle }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>

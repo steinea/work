@@ -1,0 +1,24 @@
+<h5>Tabletop Games</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "date" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "design" and item.subcategory contains "tabletop-game" %}
+        <li>{{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <br>
+
+
+<h5>Game Jams</h5>
+
+  <ul>
+    {% assign sorted = site.pages | sort: "ended" | reverse %}
+    {% for item in sorted %}
+      {% if item.category contains "design" and item.subcategory contains "game-jam" %}
+        <li>{{ item.ended | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  <br>
