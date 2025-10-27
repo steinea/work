@@ -51,8 +51,6 @@ permalink: /
 
 #### Skills
 
-{% include skills.html %}
-
 <br>
 
 
