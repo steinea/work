@@ -51,6 +51,8 @@ permalink: /
 
 #### Skills
 
+
+
 <br>
 
 
@@ -61,9 +63,16 @@ permalink: /
 <br>
 
 
-#### Scholarship
+#### Research
 
-{% include scholarship.html %}
+{% include research.html %}
+
+<br>
+
+
+#### Teaching
+
+{% include teaching.html %}
 
 <br>
 
