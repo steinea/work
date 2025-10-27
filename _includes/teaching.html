@@ -2,7 +2,7 @@
   {% assign sorted = site.pages | sort: "date" | reverse %}
   {% for item in sorted %}
     {% if item.category contains "scholarship" and item.subcategory contains "course-taught" %}
-      <li>{{ item.date | date: '%Y' }}-{{ item.semester }} <a href="{{ item.link }}">{{ item.subtitle }}</a></li>
+      <li>{{ item.semester }}{{ item.date | date: '%y' }} <a href="{{ item.link }}">{{ item.subtitle }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
