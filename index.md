@@ -4,8 +4,6 @@ title: WORK
 permalink: /
 ---
 
-<br>
-
 #### Experience
 
 {% include experience.html %}
@@ -50,6 +48,7 @@ permalink: /
 
 
 #### Skills
+
 
 <br>
 
