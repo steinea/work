@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WORK
+title: "Eric Stein / Resume"
 permalink: /
 ---
 
@@ -49,6 +49,7 @@ permalink: /
 
 #### Skills
 
+{% include skills.html %}
 
 <br>
 
