@@ -1,8 +1,8 @@
-<ul>
+<p>
   {% assign sorted = site.pages | sort: "ended" | reverse %}
   {% for item in sorted %}
     {% if item.category contains "experience" %}
-      <li>{{ item.started | date: '%Y' }} / {{ item.ended | date: '%y' }} {{ item.title }}</li>
+      {{ item.started | date: '%Y' }} / {{ item.ended | date: '%y' }} {{ item.title }}<br>
     {% endif %}
   {% endfor %}
-</ul>
+</p>

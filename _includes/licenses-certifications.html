@@ -1,8 +1,8 @@
-<ul>
+<p>
   {% assign sorted = site.pages | sort: "ended" | reverse %}
   {% for item in sorted %}
     {% if item.category contains "licenses-certifications" %}
-      <li>{{ item.started | date: '%Y' }} / {{ item.ended | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {{ item.started | date: '%Y' }} / {{ item.ended | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
     {% endif %}
   {% endfor %}
-</ul>
+</p>

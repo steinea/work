@@ -1,36 +1,36 @@
 <h5>Books</h5>
 
-  <ul>
+  <p>
     {% assign sorted = site.pages | sort: "date" | reverse %}
     {% for item in sorted %}
       {% if item.category contains "poetry" and item.subcategory contains "book" %}
-        <li>{{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+        {{ item.date | date: '%Y-%m-%d' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
       {% endif %}
     {% endfor %}
-  </ul>
+  </p>
   <br>
 
 
 <h5>Chapbooks</h5>
 
-  <ul>
+  <p>
     {% assign sorted = site.pages | sort: "date" | reverse %}
     {% for item in sorted %}
       {% if item.category contains "poetry" and item.subcategory contains "chap" %}
-        <li>{{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+        {{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
       {% endif %}
     {% endfor %}
-  </ul>
+  </p>
   <br>
 
 <h5>Poems</h5>
 
-  <ul>
+  <p>
     {% assign sorted = site.pages | sort: "date" | reverse %}
     {% for item in sorted %}
       {% if item.category contains "poetry" and item.subcategory contains "poem" %}
-        <li>{{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+        {{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
       {% endif %}
     {% endfor %}
-  </ul>
+  </p>
   <br>

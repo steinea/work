@@ -1,23 +1,23 @@
 <h5>Tabletop Games</h5>
 
-  <ul>
+  <p>
     {% assign sorted = site.pages | sort: "date" | reverse %}
     {% for item in sorted %}
       {% if item.category contains "design" and item.subcategory contains "tabletop-game" %}
-        <li>{{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+        {{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
       {% endif %}
     {% endfor %}
-  </ul>
+  </p>
   <br>
 
 
 <h5>Game Jams</h5>
 
-  <ul>
+  <p>
     {% assign sorted = site.pages | sort: "ended" | reverse %}
     {% for item in sorted %}
       {% if item.category contains "design" and item.subcategory contains "game-jam" %}
-        <li>{{ item.ended | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+        {{ item.ended | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
       {% endif %}
     {% endfor %}
-  </ul>
+  </p>

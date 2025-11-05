@@ -1,8 +1,8 @@
-<ul>
+<p>
   {% assign sorted = site.pages | sort: "date" | reverse %}
   {% for item in sorted %}
     {% if item.category contains "project" %}
-      <li>{{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a></li>
+      {{ item.date | date: '%Y' }} <a href="{{ item.link }}">{{ item.title }}</a><br>
     {% endif %}
   {% endfor %}
-</ul>
+</p>
