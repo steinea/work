@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Eric Stein / Resume"
+title: Eric Stein 👨🏼‍💼
 permalink: /
 ---
 
