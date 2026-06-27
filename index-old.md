@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Eric Stein / Resume"
-permalink: /
+permalink: /index-old/
 ---
 
 #### Experience

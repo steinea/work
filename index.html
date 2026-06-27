@@ -1,0 +1,51 @@
+---
+layout: default
+title: Eric Stein
+permalink: /
+---
+
+<!-- Tab Buttons -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab('academic')">Academic</button>
+  <button class="tablinks" onclick="openTab('industry')">Industry</button>
+</div>
+
+
+<br>
+
+
+<!-- Academic Tab -->
+<div id="academic" class="tabcontent">
+
+<p><em>See <a href="https://www.linkedin.com/in/steinea/">LinkedIn</a> for now</em></p>
+
+</div>
+
+
+<!-- Industry Tab -->
+<div id="industry" class="tabcontent">
+
+<p><em>See <a href="https://orcid.org/0000-0003-4131-2695">ORCID</a> for now</em></p>
+
+</div>
+
+
+<!-- Tab Javascript -->
+<script>
+  function openTab(tabId) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabId).style.display = "block";
+    event.currentTarget.className += " active";
+  }
+
+  // Show the first tab by default
+  openTab('academic');
+</script>
